@@ -1,0 +1,11 @@
+<p>child works! {{ hi }}</p>
+<button (click)="greeting.emit('hi')">Emit Event!</button>
+<ng-content></ng-content>
+<p>{{ date }}</p>
+<p>{{ date | date }}</p>
+<pre>{{ jsonData }}</pre>
+<pre>{{ jsonData | json }}</pre>
+<p>{{ 10 | multiple : 4 }}</p>
+<input type="text" (input)="handleEvent($event)" value="hi" />
+<p>{{ getCount }}</p>
+<app-second-child></app-second-child>

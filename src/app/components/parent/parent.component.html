@@ -1,0 +1,9 @@
+<p>parent works!</p>
+<app-child [hi]="hello" [bye]="bye" (greeting)="getEmit($event)">
+  <h1>projection</h1>
+</app-child>
+<input type="text" (input)="setNewHello($event)" />
+<br />
+<button (click)="countDown()">down</button>
+<span>{{ parentCount() }}</span>
+<button (click)="countUp()">up</button>
